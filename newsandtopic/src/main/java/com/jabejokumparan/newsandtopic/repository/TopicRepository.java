@@ -7,5 +7,5 @@ import com.jabejokumparan.newsandtopic.model.Topic;
 
 @Repository
 public interface TopicRepository extends JpaRepository<Topic, Long> {
-
+	Topic findByName(String name);
 }
